@@ -148,7 +148,7 @@ p {
    padding: 12px 18px;
    outline: none;
    font-family: 'Cormorant', serif;
-   font-size: 14px;
+   font-size: 16px;
 }
 
 .button {
@@ -157,8 +157,27 @@ p {
    outline: none;
    background-color: #C9B089;
    color: #fff;
-   padding: 12px 18px;
+   padding: 0 18px;
+   height: 40px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   font-size: 16px;
    font-family: 'Cormorant', serif;
+   cursor: pointer;
+}
+
+.button:disabled {
+   cursor: not-allowed;
+}
+
+.button path {
+   fill: #fff;
+}
+
+.hide {
+   display: none;
 }
 
 .day-left {

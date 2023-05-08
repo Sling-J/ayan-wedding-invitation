@@ -74,15 +74,34 @@
 </div>
 
 <div class="restaurant">
-   <form action="">
+   <form id="form" method="post"
+         action="https://script.google.com/macros/s/AKfycbz6FDreVaFZZkjtrSlHgQKUSePxy9qJr0BjTmvHRM5Vpkb1Leg1Vs8g4a8VBAJ_34fsZg/exec">
       <div class="restaurant-form">
          <p class="restaurant-form-title">
             Тойға келесіз бе?
          </p>
-         <input type="text" placeholder="Атыңыз" class="input">
-         <input type="text" placeholder="Фамилияңыз" class="input">
-         <button type="submit" class="button">
-            Келемін
+         <input name="first_name" type="text" placeholder="Атыңыз" class="input" required>
+         <input name="last_name" type="text" placeholder="Фамилияңыз" class="input" required>
+         <button id="submit-button" type="submit" class="button">
+            <p id="button-text">
+               Келемін
+            </p>
+            <div class="hide" id="loader">
+               <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <style>.spinner_aj0A {
+                     transform-origin: center;
+                     animation: spinner_KYSC .75s infinite linear
+                  }
+
+                  @keyframes spinner_KYSC {
+                     100% {
+                        transform: rotate(360deg)
+                     }
+                  }</style>
+                  <path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"
+                        class="spinner_aj0A"/>
+               </svg>
+            </div>
          </button>
       </div>
    </form>
