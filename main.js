@@ -28,7 +28,7 @@ window.addEventListener("load", function () {
       })
   });
 
-  const countDownDate = new Date('May 9, 2024 05:10:00').getTime();
+  const countDownDate = new Date('June 6, 2023 18:00:00').getTime();
   const dayEl = document.getElementById('js-days')
   const hoursEl = document.getElementById('js-hours')
   const minutesEl = document.getElementById('js-minutes')
